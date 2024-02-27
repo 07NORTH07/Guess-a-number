@@ -1,0 +1,55 @@
+body {
+    background-color: darkblue;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  h1 {
+    font-family: cursive;
+    font-size: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      45deg,
+      DeepPink,
+      BlueViolet,
+      red,
+      DarkOrange,
+      Yellow,
+      Lime,
+      Cyan
+    );
+    background-size: 400% 400%;
+    animation: move 8s ease infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    25% {
+      background-position: 100% 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 100% 0;
+    }
+    1000% {
+      background-position: 0 0;
+    }
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 8px;
+  }
+  button {
+    background-color: limegreen;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 8px;
+  }
